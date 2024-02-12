@@ -1,0 +1,51 @@
+body {
+    font-family: "TeleNeo Office";
+    background-color: rgb(200, 233, 243);
+}
+h3 {
+    font-family: "TeleNeo Office";
+    background-color: rgb(163, 163, 163);
+    width: 200px;
+    height: 200px;
+    Border: solid  rgb(163, 163, 163);
+    padding: 40px;
+    float: left;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    color: #e2007a;
+}
+
+/* section */
+
+article:hover {
+    border: #e2007a solid 2px;
+}
+
+article {
+    float: left;
+    width: 33.3333%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* footer */
+
+footer {
+    clear: both;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer span {
+    font-size: 1.2em;
+    color: #e2007a;
+    font-variant: small-caps;
+    float: right;
+    padding-top: 13px;
+}
