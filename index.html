@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wörterbuch Agil - Deutsch</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+    // JavaScript-Objekt mit agilen Begriffen und ihren Beschreibungen
+    const agileDescriptions = {
+        "scrum": "Ein magisches Ritual, bei dem Menschen um ein Board tanzen und Post-its anbeten.",
+        "user story": "Eine Märchengeschichte, die dem Kunden erzählt wird, und Entwickler versuchen, sie wahr werden zu lassen.",
+        "sprint": "Ein Marathonlauf, den man in kurzen, hektischen Etappen absolviert, ohne wirklich vorwärts zu kommen.",
+        "agile": "Ein Zauberwort, das verwendet wird, um Meetings zu rechtfertigen, bei denen mehr geredet als gearbeitet wird.",
+        "agile manifesto": "Ein geheimnisvolles Buch voller Weisheiten, nicht zu verwechseln mit dem Kommunistischen Manifest",
+        "agile coach": "Der Hohepriester der Agilität, der versucht renitenten Verwaltungsangestellten fortlaufend Inkremente zu entlocken.",
+        "scrum master": "Der spirituelle Führer der agilen Jünger, der sie zu erleuchten versucht, während sich alle fragen, wo die Snacks bleiben.",
+        "minimum viable product": "Auch das 'Bare-Minimum-Product' genannt, das so nackt ist, dass es sich fragt, ob es überhaupt angezogen ist.",
+        "MVP": "Auch das 'Bare-Minimum-Product' (BMP) genannt, das so nackt ist, dass es sich fragt, ob es überhaupt angezogen ist.",
+        "vision": "Bedenklicher Geisteszustand, bei dem unbedingt ärtzliche Nothilfe zu konsultieren ist.",
+        "Entwicklungsteam": "Psycho-soziale Erfahrungsgruppe, die im Auftrag des Product Owners tätig ist oder auch nicht.",
+        "Development Team": "Psycho-soziale Erfahrungsgruppe, die im Auftrag des Product Owners tätig ist oder auch nicht.",
+        "Umsetzungsteam": "Psycho-soziale Erfahrungsgruppe, die im Auftrag des Product Owners tätig ist oder auch nicht.",
+        "product backlog": "Eine ewige Wunschliste, die endgültig beweist, das Hoffnung das Letzte ist, was stirbt.",
+        "backlog": "Eine ewige Wunschliste, die endgültig beweist, das Hoffnung das Letzte ist, was stirbt.",
+        "backlog refinement": "Das rituelle Aussortieren von Hoffnungen und Träumen, um festzustellen, welchen Illusionen man dieses Mal aufgesessen ist.",
+        "refinement": "Das rituelle Aussortieren von Hoffnungen und Träumen, um festzustellen, welchen Illusionen man dieses Mal aufgesessen ist.",
+        "product owner": "Der Chaos-Capitän, der entscheidet, welche Feature-Flöße als Nächstes in den Strom der Entwicklung geworfen werden.",
+        "planning": "Die Kunst mit Pokerface zu raten, was als nächstes kommt, während alle wissen, dass das Schicksal eigene Pläne hat.",
+        "sprint planning": "Tribales Ritual, nach dessen Ende jedes Teammitglied exact instruiert ist, dass das Schicksal seine eigenen Pläne hat.",
+        "Inkrement": "Ist nicht das Gegenteil von Exkrement, sondern soll am Ende eines Sprints auch unten rauskommen.",
+        "Increment": "Ist nicht das Gegenteil von Excrement, sondern soll am Ende eines Sprints auch unten rauskommen.",
+        "product increment": "Ist nicht das Gegenteil von Product Excrement, sondern soll am Ende eines Sprints auch unten rauskommen.",
+        "daily": "Rituelle Morgenandacht, bei der jede/jeder das Eingeständis zu vermeiden versucht, gestern nicht so viel geschafft zu haben wie erhofft.",
+        "daily review": "Rituelle Abendandacht, bei der jede/jeder das Eingeständis zu vermeiden versucht, gestern nicht so viel geschafft zu haben wie erhofft.",
+        "Retrospektive": "Therapeutische Sitzung, in der man ergründet, warum alles schiefgelaufen ist, und gelobt, nächstes Mal alles besser zu machen (Spoiler: Tut man nie).",
+        "definition of ready": "Ein Blumenstrauß aller Unmöglichkeiten, einen lange davon abhalten werden, überhaupt mit der Arbeit anzufangen.",
+        "Epic": "Eine Saga, die so umfangreich und verworren ist, dass selbst der Beowulf-Dichter sagen würde: 'Das ist mir zu kompliziert'.",
+        "daily scrum": "Das morgendliche Ritual, bei dem alle im Kreis stehen, um die leere Luft mit ihren Hoffnungen, Träumen und Verzweiflungen zu füllen.",
+        "scrum team": "Gruppe tapferer Seelen, die versuchen, die Vision Realität werden zu lassen, während sie im Meer von Änderungsanträgen untergehen.",  
+        // Füge weitere Begriffe und Beschreibungen hinzu
+    };
+
+    function displayInput() {
+        var inputText = document.getElementById('name').value.toLowerCase().trim(); // Eingabetext normalisieren
+        var description = agileDescriptions[inputText]; // Beschreibung aus dem Objekt holen
+    
+        if (description) { // Überprüfen, ob eine Beschreibung gefunden wurde
+            document.getElementById('output').innerText = description;
+        } else {
+            document.getElementById('output').innerText = "Dieser Begriff ist bei uns noch nicht vorbeigelaufen. Versuch's mal mit etwas anderem!";
+        }
+    }
+    </script>
+</head>
+<body>
+<Header>
+    <h1>Wörterbuch</h1>
+    <h2>Agil - Deutsch</h2>
+    <h4>Gib hier einfach einen agilen Begriff ein, der Dir schon immer Stirnrunzeln verursacht hat (z.B. "Increment")</h4>
+    <img src="Fragezeichen.PNG"/>
+</Header>
+<input id = name type = "text"/>
+<button onclick = "displayInput();">Bitte übersetzen!</button>
+<div id="output" style="color:blue; margin: top 2px;25px;">
+    <!-- Hier wird die Beschreibung angezeigt -->
+</div>
+<p id = "para" style = "color:blue;">
+</p>
+<footer
+</body>
+</html>
